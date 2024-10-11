@@ -1,0 +1,11 @@
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\bin\Debug\net7.0\Registro.Shared.deps.json
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\bin\Debug\net7.0\Registro.Shared.dll
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\bin\Debug\net7.0\Registro.Shared.pdb
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\Registro.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\Registro.Shared.AssemblyInfoInputs.cache
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\Registro.Shared.AssemblyInfo.cs
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\Registro.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\Registro.Shared.dll
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\refint\Registro.Shared.dll
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\Registro.Shared.pdb
+C:\Users\Eduardo\source\repos\Registro\Registro\Shared\obj\Debug\net7.0\ref\Registro.Shared.dll

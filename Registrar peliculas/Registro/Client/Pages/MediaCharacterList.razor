@@ -1,0 +1,72 @@
+﻿@page "/media-character-list"
+
+<h3>Listado de Series, Películas o Libros y sus Personajes</h3>
+
+<h4>Series, Películas o Libros Registrados</h4>
+@if (mediaItems != null && mediaItems.Any())
+{
+    <ul>
+        @foreach (var media in mediaItems)
+        {
+            <li>
+                <h5>@media.Name</h5>
+                <p>País: @media.Country</p>
+                <p>Idioma: @media.Language</p>
+                <p><img src="@media.PhotoUrl" alt="@media.Name" style="max-width: 200px;" /></p>
+                <p>Resumen: @media.Summary</p>
+
+                <h6>Personajes:</h6>
+                <ul>
+                    @foreach (var character in characters.Where(c => c.MediaName == media.Name))
+                    {
+                        <li>
+                            <strong>@character.Name</strong> (Apodo: @character.Nickname, Raza: @character.Race, Edad: @character.Age)
+                            <p><img src="@character.PhotoUrl" alt="@character.Name" style="max-width: 100px;" /></p>
+                            <p>Poder Característico: @character.SpecialPower</p>
+                        </li>
+                    }
+                </ul>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No hay registros de series, películas o libros disponibles.</p>
+}
+
+@code {
+    private List<MediaItem> mediaItems = new List<MediaItem>(); // Lista de series, películas o libros
+    private List<Character> characters = new List<Character>(); // Lista de personajes
+
+    protected override void OnInitialized()
+    {
+        // Simulación de datos registrados (puedes ajustar esto o cargar datos desde otra fuente)
+        mediaItems.Add(new MediaItem { Name = "Serie A", Country = "USA", Language = "Inglés", PhotoUrl = "url_de_foto_a", Summary = "Resumen de la serie A." });
+        mediaItems.Add(new MediaItem { Name = "Película B", Country = "UK", Language = "Inglés", PhotoUrl = "url_de_foto_b", Summary = "Resumen de la película B." });
+
+        characters.Add(new Character { Name = "Personaje 1", Nickname = "P1", Race = "Humano", PhotoUrl = "url_de_foto_personaje1", Age = 30, SpecialPower = "Telepatía", MediaName = "Serie A" });
+        characters.Add(new Character { Name = "Personaje 2", Nickname = "P2", Race = "Elfo", PhotoUrl = "url_de_foto_personaje2", Age = 120, SpecialPower = "Invisibilidad", MediaName = "Serie A" });
+        characters.Add(new Character { Name = "Personaje 3", Nickname = "P3", Race = "Humano", PhotoUrl = "url_de_foto_personaje3", Age = 25, SpecialPower = "Fuerza", MediaName = "Película B" });
+    }
+
+    public class MediaItem
+    {
+        public string Name { get; set; }
+        public string Country { get; set; }
+        public string Language { get; set; }
+        public string PhotoUrl { get; set; }
+        public string Summary { get; set; }
+    }
+
+    public class Character
+    {
+        public string Name { get; set; }
+        public string Nickname { get; set; }
+        public string Race { get; set; }
+        public string PhotoUrl { get; set; }
+        public int Age { get; set; }
+        public string SpecialPower { get; set; }
+        public string MediaName { get; set; } // Nombre de la serie, película o libro a la que pertenece
+    }
+}

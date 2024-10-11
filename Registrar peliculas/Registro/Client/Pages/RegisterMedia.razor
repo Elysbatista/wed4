@@ -1,0 +1,73 @@
+﻿@page "/register-media"
+
+<h3>Registrar Serie, Película o Libro</h3>
+
+<EditForm Model="newMediaItem" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="name">Nombre:</label>
+        <InputText id="name" @bind-Value="newMediaItem.Name" />
+    </div>
+    <div>
+        <label for="country">País:</label>
+        <InputText id="country" @bind-Value="newMediaItem.Country" />
+    </div>
+    <div>
+        <label for="language">Idioma:</label>
+        <InputText id="language" @bind-Value="newMediaItem.Language" />
+    </div>
+    <div>
+        <label for="photoUrl">Foto URL:</label>
+        <InputText id="photoUrl" @bind-Value="newMediaItem.PhotoUrl" />
+    </div>
+    <div>
+        <label for="summary">Resumen:</label>
+        <InputTextArea id="summary" @bind-Value="newMediaItem.Summary" />
+    </div>
+
+    <button type="submit">Registrar</button>
+</EditForm>
+
+<h3>Lista de Series, Películas o Libros Registrados</h3>
+
+@if (mediaItems != null && mediaItems.Any())
+{
+    <ul>
+        @foreach (var item in mediaItems)
+        {
+            <li>
+                <h4>@item.Name</h4>
+                <p>País: @item.Country</p>
+                <p>Idioma: @item.Language</p>
+                <p><img src="@item.PhotoUrl" alt="@item.Name" style="max-width: 200px;" /></p>
+                <p>Resumen: @item.Summary</p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No hay registros disponibles.</p>
+}
+
+@code {
+    private MediaItem newMediaItem = new MediaItem();
+    private List<MediaItem> mediaItems = new List<MediaItem>(); // Lista en memoria
+
+    private void HandleValidSubmit()
+    {
+        mediaItems.Add(newMediaItem);
+        newMediaItem = new MediaItem(); // Resetea el formulario
+    }
+
+    public class MediaItem
+    {
+        public string Name { get; set; }
+        public string Country { get; set; }
+        public string Language { get; set; }
+        public string PhotoUrl { get; set; }
+        public string Summary { get; set; }
+    }
+}

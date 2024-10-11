@@ -1,0 +1,79 @@
+﻿@page "/register-character"
+
+<h3>Registrar Personaje</h3>
+
+<EditForm Model="newCharacter" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="name">Nombre:</label>
+        <InputText id="name" @bind-Value="newCharacter.Name" />
+    </div>
+    <div>
+        <label for="nickname">Apodo:</label>
+        <InputText id="nickname" @bind-Value="newCharacter.Nickname" />
+    </div>
+    <div>
+        <label for="race">Raza:</label>
+        <InputText id="race" @bind-Value="newCharacter.Race" />
+    </div>
+    <div>
+        <label for="photoUrl">Foto URL:</label>
+        <InputText id="photoUrl" @bind-Value="newCharacter.PhotoUrl" />
+    </div>
+    <div>
+        <label for="age">Edad:</label>
+        <InputNumber id="age" @bind-Value="newCharacter.Age" />
+    </div>
+    <div>
+        <label for="power">Poder Característico:</label>
+        <InputText id="power" @bind-Value="newCharacter.SpecialPower" />
+    </div>
+
+    <button type="submit">Registrar</button>
+</EditForm>
+
+<h3>Lista de Personajes Registrados</h3>
+
+@if (characters != null && characters.Any())
+{
+    <ul>
+        @foreach (var character in characters)
+        {
+            <li>
+                <h4>@character.Name</h4>
+                <p>Apodo: @character.Nickname</p>
+                <p>Raza: @character.Race</p>
+                <p>Edad: @character.Age</p>
+                <p><img src="@character.PhotoUrl" alt="@character.Name" style="max-width: 200px;" /></p>
+                <p>Poder Característico: @character.SpecialPower</p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No hay registros disponibles.</p>
+}
+
+@code {
+    private Character newCharacter = new Character();
+    private List<Character> characters = new List<Character>(); // Lista en memoria
+
+    private void HandleValidSubmit()
+    {
+        characters.Add(newCharacter); // Agrega el nuevo personaje a la lista
+        newCharacter = new Character(); // Resetea el formulario
+    }
+
+    public class Character
+    {
+        public string Name { get; set; }
+        public string Nickname { get; set; }
+        public string Race { get; set; }
+        public string PhotoUrl { get; set; }
+        public int Age { get; set; }
+        public string SpecialPower { get; set; }
+    }
+}

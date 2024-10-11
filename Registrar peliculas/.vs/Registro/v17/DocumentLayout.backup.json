@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eduardo\\source\\repos\\Registro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|c:\\users\\eduardo\\source\\repos\\registro\\registro\\client\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|solutionrelative:registro\\client\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|c:\\users\\eduardo\\source\\repos\\registro\\registro\\client\\pages\\mediacharacterlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|solutionrelative:registro\\client\\pages\\mediacharacterlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|c:\\users\\eduardo\\source\\repos\\registro\\registro\\client\\pages\\registercharacter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|solutionrelative:registro\\client\\pages\\registercharacter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|c:\\users\\eduardo\\source\\repos\\registro\\registro\\client\\pages\\registermedia.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AED4739-42DA-4834-B7D0-85681B68ADFE}|Registro\\Client\\Registro.Client.csproj|solutionrelative:registro\\client\\pages\\registermedia.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MediaCharacterList.razor",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Pages\\MediaCharacterList.razor",
+              "RelativeDocumentMoniker": "Registro\\Client\\Pages\\MediaCharacterList.razor",
+              "ToolTip": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Pages\\MediaCharacterList.razor",
+              "RelativeToolTip": "Registro\\Client\\Pages\\MediaCharacterList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T02:58:08.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterCharacter.razor",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Pages\\RegisterCharacter.razor",
+              "RelativeDocumentMoniker": "Registro\\Client\\Pages\\RegisterCharacter.razor",
+              "ToolTip": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Pages\\RegisterCharacter.razor",
+              "RelativeToolTip": "Registro\\Client\\Pages\\RegisterCharacter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T02:53:58.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Registro\\Client\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Registro\\Client\\Shared\\NavMenu.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T02:48:38.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterMedia.razor",
+              "DocumentMoniker": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Pages\\RegisterMedia.razor",
+              "RelativeDocumentMoniker": "Registro\\Client\\Pages\\RegisterMedia.razor",
+              "ToolTip": "C:\\Users\\Eduardo\\source\\repos\\Registro\\Registro\\Client\\Pages\\RegisterMedia.razor",
+              "RelativeToolTip": "Registro\\Client\\Pages\\RegisterMedia.razor",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAswEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-11T02:48:23.729Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
